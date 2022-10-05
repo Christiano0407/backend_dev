@@ -1,4 +1,3 @@
-const hello = (name) => {
-  return `Hello, my friend ${name}`;
-};
+import { hello } from "./modules/hello.js";
+
 console.log(hello("Luisa"));
