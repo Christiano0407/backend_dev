@@ -8,5 +8,9 @@ const myGame = (game) => {
 };
 
 //** === Modules Exports ===  */
-module.exports.hello = hello;
-module.exports.myGame = myGame;
+module.exports = {
+  hello: hello,
+  myGame: myGame,
+};
+/* module.exports.hello = hello;
+module.exports.myGame = myGame; */
