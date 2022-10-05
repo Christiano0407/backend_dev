@@ -50,6 +50,12 @@ module.exports.myGame = myGame;
 
 ```
 
+## Module OS
+
+> Os => Operating System (Sistema Operativo)
+
+Contiene funcionalidad para obtener Información, sobre el sistema operativo; en el cual se ejecutará la aplicación.
+
 ## MIT License
 
 MIT License
