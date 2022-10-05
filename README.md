@@ -1,7 +1,8 @@
 # backend_dev
+
 Projects using Backend with Node js and Javascript. Practice and Courses With Node Js.
 
-## FreeCodeCamp & Platzi 
+## FreeCodeCamp & Platzi
 
 Si deseas ver el curso en nuestro canal de YouTube, haz clic en este enlace:
 
@@ -15,10 +16,39 @@ Node.js para ejecutar los programas en el terminal. Para ello, usaremos el sigui
 
 > node app.js
 
-## Node js no es: 
+## Node js no es
 
 Node Js no es, un lenguaje de programación. Es un entorno de ejecución  de Javascript. Tampoco un Framework o Librería (Biblioteca).
-Ejecuta Javascript. 
+Ejecuta Javascript.
+
+## Modules
+
+> Require & Import / Export
+
+> Javascript Modules
+
+```javascript
+const helloFriend = require("./modules/hello.js");
+
+console.log(helloFriend);
+console.log(helloFriend.hello("Luisa"));
+console.log(helloFriend.myGame("Zelda"));
+
+```
+
+```javascript
+const hello = (name) => {
+  return `Hello, my friend ${name}`;
+};
+
+const myGame = (game) => {
+  return `My favorite game is: ${game}`;
+};
+
+module.exports.hello = hello;
+module.exports.myGame = myGame;
+
+```
 
 ## MIT License
 
