@@ -21,6 +21,22 @@ Node.js para ejecutar los programas en el terminal. Para ello, usaremos el sigui
 Node Js no es, un lenguaje de programación. Es un entorno de ejecución  de Javascript. Tampoco un Framework o Librería (Biblioteca).
 Ejecuta Javascript.
 
+> Node Js
+
+![nodeJs](https://static.platzi.com/media/user_upload/resumen-c7ceaedf-8a75-4dcd-94c4-764a75bea727.jpg)
+
+## Event Loop
+
+> Event Loop
+
+Event Queue: Contiene todos los eventos que se generan por nuestro código (Funciones, peticiones, etc.), estos eventos quedan en una cola que van pasando uno a uno al Event Loop.
+
+Event Loop: Se encarga de resolver los eventos ultra rápidos que llegan desde el Event Queue. En caso de no poder resolverse rápido, enviá el evento al Thread Pool.
+
+Thread Pool: Se encarga de gestionar los eventos de forma asíncrona. Una vez terminado lo devuelve al Event Loop. El Event Loop vera si lo pasa a Event Queue o no.
+
+![EventLoop](https://i.ibb.co/j42621b/event-loop.png)
+
 ## Modules
 
 > Require & Import / Export
