@@ -26,12 +26,11 @@ peoples()
   .catch((err) => console.log("error"));
  */
 //*! ===  */
-const friends = (friend) => {
+/* const friends = (friend) => {
   return new Promise((resolve, reject) => {
     console.log(`First Friend: ${friend}`);
     setTimeout(() => {
       resolve(friend);
-      //reject(friend);
     }, 1000);
     console.log("Other friends come in half hour");
   });
@@ -39,4 +38,23 @@ const friends = (friend) => {
 
 friends("Mauricio")
   .then((friend) => console.log(`He will forever be my best friend ${friend}`))
-  .catch((err) => console.log("Not my friend"));
+  .catch((err) => console.log("Not my friend")); */
+
+//*! === */
+const friends = (friend) => {
+  return new Promise((resolve, reject) => {
+    console.log(`First Friend: ${friend}`);
+
+    true
+      ? setTimeout(() => {
+          resolve(friend);
+        }, 1000)
+      : reject(new Error("Not my friend"));
+
+    console.log("Other friends come in half hour");
+  });
+};
+
+friends("Mauricio")
+  .then((friend) => console.log(`He will forever be my best friend ${friend}`))
+  .catch((err) => console.log(err));
