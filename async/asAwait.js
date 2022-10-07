@@ -1,4 +1,5 @@
 //** === === Async & Await => Try and Catch === ===  */
+//*? === 01 */
 const friends = (friend) => {
   return new Promise((resolve, reject) => {
     console.log(`First Friend: ${friend}`);
@@ -16,12 +17,12 @@ const friends = (friend) => {
 /* friends("Mauricio")
   .then((friend) => console.log(`He will forever be my best friend ${friend}`))
   .catch((err) => console.log(err)); */
-
+//*? === 02 */
 const myNewFriend = async (girl) => {
   console.log(`She is my new friendGirl${girl}`);
 };
 
-//*! === Async and Await  */
+//*! Execute === Async and Await  */
 const asyncFunction = async () => {
   try {
     const response = await friends("Mauricio");
