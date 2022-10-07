@@ -54,6 +54,14 @@ En caso de querer tener variables de entorno en un archivo, puede utilizar dote
 
 - [npm_dotenv](https://www.npmjs.com/package/dotenv)
 
+```javascript
+const config = {
+  env: process.env.NODE_ENV || "Development",
+  port: process.env.PORT || 8080,
+  password: process.env.PASSWORD || "Unitedxoxoxoxo",
+};
+```
+
 ## Modules
 
 > Require & Import / Export
