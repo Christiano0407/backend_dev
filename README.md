@@ -97,6 +97,16 @@ module.exports.myGame = myGame;
 
 Contiene funcionalidad para obtener Información, sobre el sistema operativo; en el cual se ejecutará la aplicación.
 
+## Tools / Herramientas para Entorno de Desarrollo (Dev) y Producción
+
+> Nodemon
+
+- [nodemon](https://github.com/remy/nodemon#nodemon)
+
+> PM2
+
+- [PM2](https://pm2.keymetrics.io/)
+
 ## MIT License
 
 MIT License
