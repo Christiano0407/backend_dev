@@ -52,7 +52,7 @@ console.log(`Hello, ${name}`);
 
 En caso de querer tener variables de entorno en un archivo, puede utilizar dotenv
 
-- [npm](https://www.npmjs.com/package/dotenv)
+- [npm_dotenv](https://www.npmjs.com/package/dotenv)
 
 ## Modules
 
