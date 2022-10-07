@@ -37,6 +37,23 @@ Thread Pool: Se encarga de gestionar los eventos de forma asíncrona. Una vez te
 
 ![EventLoop](https://i.ibb.co/j42621b/event-loop.png)
 
+## Variables de entorno en Node.js
+
+Las variables de entorno son una forma de llamar información de afuera a nuestro software, sirve para definir parámetros sencillos de configuración de los programas de modo que puedan ejecutarse en diferentes ambiente sin necesidad de modificar el código fuente de un script.
+
+```javascript
+let name = process.env.NAME || "Not name";
+
+console.log(`Hello, ${name}`);
+
+```
+
+> NAME="Chris"
+
+En caso de querer tener variables de entorno en un archivo, puede utilizar dotenv
+
+- [npm](https://www.npmjs.com/package/dotenv)
+
 ## Modules
 
 > Require & Import / Export
