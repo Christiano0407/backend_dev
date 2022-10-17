@@ -114,6 +114,25 @@ Contiene funcionalidad para obtener Información, sobre el sistema operativo; en
 - [npm_sharp](https://www.npmjs.com/package/sharp);
 - [DigitalL_Ocean_tutorial](https://www.digitalocean.com/community/tutorials/how-to-process-images-in-node-js-with-sharp)
 
+```javascript
+
+async function resizeImage() {
+  try {
+    await sharp("./utiles/imageOne.jpg")
+      .resize({
+        width: 150,
+        height: 100,
+      })
+      .toFile("./utiles/resizedPlus.jpg");
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+resizeImage();
+
+```
+
 ## MIT License
 
 MIT License
