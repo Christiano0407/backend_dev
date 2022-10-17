@@ -1,0 +1,25 @@
+{
+  "name": "backend_dev",
+  "version": "1.0.0",
+  "description": "project_backend",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Christiano0407/backend_dev.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Chris04",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Christiano0407/backend_dev/issues"
+  },
+  "homepage": "https://github.com/Christiano0407/backend_dev#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0"
+  }
+}
