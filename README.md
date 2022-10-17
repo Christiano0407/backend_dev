@@ -112,7 +112,7 @@ Contiene funcionalidad para obtener Información, sobre el sistema operativo; en
 > Sharp npm & Work Node js Size
 
 - [npm_sharp](https://www.npmjs.com/package/sharp);
-- [dIGITAL_Ocean_tutorial](https://www.digitalocean.com/community/tutorials/how-to-process-images-in-node-js-with-sharp)
+- [DigitalL_Ocean_tutorial](https://www.digitalocean.com/community/tutorials/how-to-process-images-in-node-js-with-sharp)
 
 ## MIT License
 
