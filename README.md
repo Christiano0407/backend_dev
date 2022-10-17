@@ -107,6 +107,13 @@ Contiene funcionalidad para obtener Información, sobre el sistema operativo; en
 
 - [PM2](https://pm2.keymetrics.io/)
 
+## NPM Sharp
+
+> Sharp npm & Work Node js Size
+
+- [npm_sharp](https://www.npmjs.com/package/sharp);
+- [dIGITAL_Ocean_tutorial](https://www.digitalocean.com/community/tutorials/how-to-process-images-in-node-js-with-sharp)
+
 ## MIT License
 
 MIT License
