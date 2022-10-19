@@ -48,7 +48,9 @@ Node.js para ejecutar los programas en el terminal. Para ello, usaremos el sigui
 
 > node app.js
 
-## Nodejs no es
+## ¿Qué no es Node js?
+
+> NodeJs no es:
 
 Node Js no es, un lenguaje de programación. Es un entorno de ejecución  de Javascript. Tampoco un Framework o Librería (Biblioteca).
 Ejecuta Javascript.
@@ -59,9 +61,29 @@ Ejecuta Javascript.
 
 ## Arquitectura Cliente Servidor
 
-> Cliente-Servido / Server-Client
+> Cliente-Servidor / Server-Client
 
 Modelo en el cual el servidor envía recursos al dispositivo que los solicita (cliente).
+
+## Protocolo
+
+> ¿ Qué es un Protocolo?
+
+Reglas que permiten que dos entidades de una red se comuniquen.
+
+> Protocolos HTTP & HTTPS
+
+"HTTPS", es un protocolo más seguro e encriptado; a diferencia  de "HTTP".
+
+> Mozilla (MDN)
+
+- [MDN_HTTP](https://developer.mozilla.org/es/docs/Web/HTTP)
+
+## Bases de Datos
+
+> ¿Qué es una Base de Datos?
+
+Conjunto de datos estructurados sobre un mismo contexto que se pueden consultar.
 
 ## Event Loop
 
@@ -169,6 +191,37 @@ async function resizeImage() {
 
 resizeImage();
 
+```
+
+## Express Web Framework
+
+> Express Js
+
+- [expressjs](https://expressjs.com/es/)
+- [MDN_expressjs](https://developer.mozilla.org/es/docs/Learn/Server-side/Express_Nodejs)
+
+> npm
+
+```javascript
+npm install express
+```
+
+```javascript
+npm install express --save
+```
+
+```javascript
+const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
 ```
 
 ## MIT License
