@@ -85,6 +85,18 @@ Reglas que permiten que dos entidades de una red se comuniquen.
 
 Conjunto de datos estructurados sobre un mismo contexto que se pueden consultar.
 
+## Paginas Web Estáticas y Dinámicas
+
+> Existen dos tipos: Estática y Dinámica
+
+> Estática:
+
+No necesita interacción con el usuario.
+
+> Dinámica:
+
+Sí tiene interacción con el usuario. Además, puede generar peticiones.
+
 ## Event Loop
 
 > Event Loop
