@@ -199,11 +199,58 @@ module.exports.myGame = myGame;
 
 ```
 
-## Module OS
+## Module / Módulo built-in (incorporados)
+
+Muy útiles para realizar tareas comunes al trabajar con Node Js.
+
+- HTTP
+- HTTPS
+- FS (file System) / Sistema de Archivos
+- OS (Operating System) / Sistema Operativo
+- Path (Routh) / Ubicación o ruta
+- Console (consola)
+
+## Module Console
+
+```javascript
+console.log: recibe cualquier tipo y lo muestra en el consola.
+console.info: es equivalente a log pero es usado para informar.
+console.error: es equivalente a log pero es usado para errores.
+console.warn: es equivalente a log pero es usado para warning.
+console.table: muestra una tabla a partir de un objeto.
+console.count: inicia un contador autoincremental.
+console.countReset: reinicia el contador a 0.
+console.time: inicia un cronometro en ms.
+console.timeEnd: Finaliza el cronometro.
+console.group: permite agrupar errores mediante identación.
+console.groupEnd: finaliza la agrupación.
+console.clear: Limpia la consola.
+```
+
+## Module OS (Operating System)
 
 > Os => Operating System (Sistema Operativo)
 
 Contiene funcionalidad para obtener Información, sobre el sistema operativo; en el cual se ejecutará la aplicación.
+
+```javascript
+const os = require("os");
+console.log(os.type());
+console.log(os.arch());
+console.log(os.platform());
+console.log(os.cpus());
+console.log(os.constants);
+console.log(os.freemem());
+function gb(bytes) {
+  return mb(bytes) / SIZE;
+}
+console.log(mb(os.freemem()));
+console.log(gb(os.freemem()));
+console.log(os.homedir());
+console.log(os.tmpdir());
+console.log(os.hostname());
+console.log(os.networkInterfaces());
+```
 
 ## Tools / Herramientas para Entorno de Desarrollo (Dev) y Producción
 
