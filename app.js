@@ -1,7 +1,8 @@
 //** ===  === === > Modules Require == Import < === === ===  */
 //*TODO === === ===  Modules === */
 //const helloFriend = require("./modules/hello.js");
-const { hello, myGame } = require("./modules/hello.js");
+// => { } == Destructure Syntax.
+const { hello, myGame, newComing } = require("./modules/hello.js");
 //import { call } from "./modules/call.js";
 
 //*! === Call Modules ===  */
@@ -10,4 +11,5 @@ const { hello, myGame } = require("./modules/hello.js");
 console.log(helloFriend.myGame("Zelda")); */
 console.log(hello("Luisa"));
 console.log(myGame("Zelda"));
+console.log(newComing("In Technology"));
 //console.log(call("Madre"));

@@ -160,9 +160,19 @@ const config = {
 };
 ```
 
-## Modules
+## Modules / Módulos
 
-> Require & Import / Export
+Funcionalidad Organizada en uno o varios archivos Javascript que puede ser reutilizada en unaaplicación.
+
+> Ventajas:
+
+- Evitar repetición del código.
+- Reutilizar el código.
+- Es más fácil encontrar y corregir un "bug"
+- Es más fácil modificar el código.
+- Es más fácil agregar nuevas funcionalidades.
+
+> Require & Import / Export / .mjs & type=module.
 
 > Javascript Modules
 
