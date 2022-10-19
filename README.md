@@ -10,13 +10,45 @@ Si deseas ver el curso en nuestro canal de YouTube, haz clic en este enlace:
 
 - [Platzi](https://platzi.com/home)
 
+## ¿Qué es NodeJs?
+
+Es un entorno de ejecución de Javascript, orientado a eventos asíncronos.
+
+> ¿Entorno de Ejecución?
+
+Entorno (Infraestructura) en el cual se ejecuta un programa o aplicación.
+
+> ¿Qué es un evento asíncrono?
+
+Evento que se ejecuta independiente del proceso principal de la aplicación.
+
+Un ejemplo: Obtener información de una base de datos.
+
+> ¿ Evento Síncrono?
+
+Evento que se ejecuta como parte del proceso principal de la aplicación.
+
+> Características:
+
+- Open-source(Código Abierto).
+- Multiplataforma.
+- Basado en el motor V8 de Google.
+
+> ¿Motor V8?
+
+Motor de Javascript desarrollado por el Chromium Project para Google Chrome.
+
+> ¿Motor de Javascript?
+
+Software que ejecuta código de Javascript.
+
 ## Ejecutar Código
 
 Node.js para ejecutar los programas en el terminal. Para ello, usaremos el siguiente comando si el archivo a ejecutar es app.js.
 
 > node app.js
 
-## Node js no es
+## Nodejs no es
 
 Node Js no es, un lenguaje de programación. Es un entorno de ejecución  de Javascript. Tampoco un Framework o Librería (Biblioteca).
 Ejecuta Javascript.
@@ -24,6 +56,12 @@ Ejecuta Javascript.
 > Node Js
 
 ![nodeJs](https://static.platzi.com/media/user_upload/resumen-c7ceaedf-8a75-4dcd-94c4-764a75bea727.jpg)
+
+## Arquitectura Cliente Servidor
+
+> Cliente-Servido / Server-Client
+
+Modelo en el cual el servidor envía recursos al dispositivo que los solicita (cliente).
 
 ## Event Loop
 
