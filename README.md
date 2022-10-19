@@ -42,6 +42,23 @@ Motor de Javascript desarrollado por el Chromium Project para Google Chrome.
 
 Software que ejecuta código de Javascript.
 
+> Es usado para:
+
+- Desarrollo Back-end
+- Desarrollo de API.
+
+> Escalable y de Tiempo Ral /  Scalable & Real-time
+
+Node Js, permite desarrollar aplicaciones escalables y de tiempo real.
+
+> Escalable:
+
+Su rendimiento se puede adaptar a medida que crece el uso de la aplicación y recibe más solicitudes.
+
+> Tiempo Real:
+
+Establece una conexión bidireccional y dinámica, entre el cliente e servidor. Analiza los eventos, y reacciona de manera inmediata.
+
 ## Ejecutar Código
 
 Node.js para ejecutar los programas en el terminal. Para ello, usaremos el siguiente comando si el archivo a ejecutar es app.js.
@@ -96,6 +113,15 @@ No necesita interacción con el usuario.
 > Dinámica:
 
 Sí tiene interacción con el usuario. Además, puede generar peticiones.
+
+## API (Aplication Programming Interface)
+
+> ¿Qué es una API?
+
+Aplication Programming Interface (Interfaz de programación de aplicaciones).
+
+- [MDN_API](https://developer.mozilla.org/es/docs/Mozilla/Add-ons/WebExtensions/API)
+- [Referencia_API_Web](https://developer.mozilla.org/es/docs/Web/API)
 
 ## Event Loop
 
