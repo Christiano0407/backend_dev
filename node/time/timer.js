@@ -1,8 +1,7 @@
-//** === Time => setTimeout(), setInterval(), setInmediate() ===  */
+//** === Time => setTimeout(), setInterval(), setImmediate() ===  */
+//** ===  1 sec ==> 1000 ms ===  */
 
-//*! ===  1 sec ==> 1000 ms ===  */
-
-//*! === setTimeout(funcion, retraso/time, argumento) === 1 vez cada tiempo estipulado ===  */
+//*! === 1) setTimeout(funcion, retraso/time, argumento) === 1 vez cada tiempo estipulado ===  */
 //*! === setTimeout(funcion, retraso/time, argumento1, argumento2) ===  */
 
 console.log("Right Now!!");
@@ -16,7 +15,7 @@ setTimeout(() => {
   console.log("New Function");
 }, 3000);
 
-//*? === setInterval() === setInterval(code, delay) */
+//*? === 2) setInterval() === setInterval(code, delay) */
 //*? === setInterval() === setInterval(func, delay, arg0, arg1, /* … ,*/ argN) */
 
 const intervalHero = (hero) => {
@@ -34,3 +33,5 @@ setInterval(
   1000,
   "Thor"
 );
+
+//** === 3)  setImmediate() ===> ASYNC (se ejecuta después, del código síncrono) === setImmediate(func, param0, param1, /* … ,*/ paramN) */

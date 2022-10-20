@@ -319,8 +319,10 @@ app.listen(port, () => {
 
 ## Time
 
-> Timer => setTimeout(), setInterval(), setInmediate()
+> Timer => setTimeout(), setInterval(), setImmediate()
 > setTimeout()
+
+Se ejecuta una una vez, cada tiempo estipulado.
 
 ```javascript
 setTimeout(code)
@@ -334,6 +336,8 @@ setTimeout(functionRef, delay, param1, param2, /* … ,*/ paramN)
 ```
 
 > setInterval()
+
+Para ejecutar código un número infinito de veces con retraso específico de milisegundos.
 
 ```javascript
 setInterval(code)
@@ -356,6 +360,19 @@ function myCallback(a, b)
  console.log(a);
  console.log(b);
 }
+```
+
+> setImmediate()
+
+se ejecuta después del código síncrono.
+
+```javascript
+
+setImmediate(func)
+setImmediate(func, param0)
+setImmediate(func, param0, param1)
+setImmediate(func, param0, param1, /* … ,*/ paramN)
+
 ```
 
 ## MIT License
