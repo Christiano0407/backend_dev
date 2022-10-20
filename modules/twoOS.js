@@ -1,6 +1,7 @@
-//** === === OS === sYSTEM Operative === */
+//** === === OS === SYSTEM Operative === */
 const os = require("os");
 
+//console.warn(`error`);
 //console.log(os.type());
 //console.log(os.arch());
 //console.log(os.platform());
@@ -15,4 +16,7 @@ console.log(gb(os.freemem())); */
 //console.log(os.homedir());
 //console.log(os.tmpdir());
 //console.log(os.hostname());
-console.log(os.networkInterfaces());
+//console.log(os.uptime());
+//console.log(os.userInfo());
+
+//console.log(os.networkInterfaces());

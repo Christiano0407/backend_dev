@@ -105,7 +105,6 @@ Conjunto de datos estructurados sobre un mismo contexto que se pueden consultar.
 ## Paginas Web Estáticas y Dinámicas
 
 > Existen dos tipos: Estática y Dinámica
-
 > Estática:
 
 No necesita interacción con el usuario.
@@ -173,7 +172,6 @@ Funcionalidad Organizada en uno o varios archivos Javascript que puede ser reuti
 - Es más fácil agregar nuevas funcionalidades.
 
 > Require & Import / Export / .mjs & type=module.
-
 > Javascript Modules
 
 ```javascript
@@ -317,6 +315,47 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+```
+
+## Time
+
+> Timer => setTimeout(), setInterval(), setInmediate()
+> setTimeout()
+
+```javascript
+setTimeout(code)
+setTimeout(code, delay)
+
+setTimeout(functionRef)
+setTimeout(functionRef, delay)
+setTimeout(functionRef, delay, param1)
+setTimeout(functionRef, delay, param1, param2)
+setTimeout(functionRef, delay, param1, param2, /* … ,*/ paramN)
+```
+
+> setInterval()
+
+```javascript
+setInterval(code)
+setInterval(code, delay)
+
+setInterval(func)
+setInterval(func, delay)
+setInterval(func, delay, arg0)
+setInterval(func, delay, arg0, arg1)
+setInterval(func, delay, arg0, arg1, /* … ,*/ argN)
+```
+
+```javascript
+const intervalID = setInterval(myCallback, 500, 'Parameter 1', 'Parameter 2');
+
+function myCallback(a, b)
+{
+ // Your code here
+ // Parameters are purely optional.
+ console.log(a);
+ console.log(b);
+}
 ```
 
 ## MIT License
