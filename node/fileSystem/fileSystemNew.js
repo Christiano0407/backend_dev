@@ -9,10 +9,19 @@ const fs = require(`fs`);
   }
 }); */
 //** === Rename Other File ===  */
-fs.rename("fileSystem.html", "file.html", (error) => {
+/* fs.rename("./fileSystem.html", "file.html", (error) => {
   if (error) {
-    console.log(error);
+    throw error;
   } else {
     console.log("File New");
   }
 });
+ */
+//** === Add Content on File ===  */
+/* fs.appendFile("./fileSystem.html", "<p>Hello</p>", (error) => {
+  if (error) {
+    throw error;
+  } else {
+    console.log("File and Text New");
+  }
+}); */
