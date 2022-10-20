@@ -8,3 +8,11 @@ const fs = require(`fs`);
     console.log(container);
   }
 }); */
+//** === Rename Other File ===  */
+fs.rename("fileSystem.html", "file.html", (error) => {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log("File New");
+  }
+});
