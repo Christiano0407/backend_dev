@@ -1,6 +1,7 @@
 //** === FS => File System === */
 const fs = require(`fs`).promises;
 
+//** === 1) Example ===  */
 (async function (path) {
   try {
     await fs.unlink(path);
@@ -12,18 +13,17 @@ const fs = require(`fs`).promises;
 //exports.leer = leer;
 //leer("./archivo.txt");
 
-// ==== Other Example ===
+//** ==== 2) Other Example === */
 const fs = require(`fs`).promises;
 
-const redFile = async() => {
-    try { 
-   /*  const file = await fs.redFile(__dirname + "./archivo.txt", {encoding: `utf-8`});
+const redFile = async () => {
+  try {
+    /*  const file = await fs.redFile(__dirname + "./archivo.txt", {encoding: `utf-8`});
     console.log(file); */
 
     const data = await fs.redFile(__dirname + "./archivo.txt");
     return data.toString();
-    }
-    catch(error) {
-        console.log("We have an Error", error.message);
-    }
-}
+  } catch (error) {
+    console.log("We have an Error", error.message);
+  }
+};
