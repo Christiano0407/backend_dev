@@ -375,6 +375,60 @@ setImmediate(func, param0, param1, /* … ,*/ paramN)
 
 ```
 
+## NPM & NodeJs
+
+> npm Create my first Package, in format JSON.
+> npm init
+> npm init --yes (default).
+
+- [npm](https://www.npmjs.com/)
+
+Es el archivo de software más grande del mundo que contiene paquetes que pueden instalar y usar con Node.js. También, una herramienta para la línea de comando.
+
+> Paquete
+
+Archivo o directorio descrito por un archivo package.json.
+
+> Modulo / Module
+
+Cualquier archivo o directorio en "node_modules", que puede ser importado por require().
+
+> Dependencia
+
+Paquete que otro paquete necesita para funcionar correctamente.
+
+> Detalles "npm init"
+
+"entry point" (punto de entrada). Archivo principal del paquete(se van a importar).
+Investigar las diferentes tipos de licencia (MIT, isc...etc).
+
+## npm and ¿JSON? Javascript Object Notation (Key - Value)
+
+- {} (Objects / Objetos) or [] (Array / Arreglos).
+- Los datos se representan como "pares": "clave - valor" (propiedades).
+- Formato (texto) basado en la sintaxis de Javascrpt. Almacena y transporta información.
+- "JSON" está  basado en la notación de objetos de Javascript pero es solo text.Nos permite almacenar "objetos" de javascript como texto (cliente & servidor).
+- Es independiente del lenguaje de programación con el cual estás trabajando.
+- Pares deben estar separados por ","
+
+> Pueden Contener
+
+- Objetos (objects "{}")
+- Cadena de caracteres("Key-Value").
+- números (numbers).
+- Arreglos (arrays "[]").
+- Valores Booleanos (true or false).
+
+> Image (EDTeam)
+
+- [](https://static.platzi.com/media/user_upload/Captura-d1ad3ce0-efd6-4422-b8c2-9d43ff61109d.jpg)
+
+## CDN(Red de Distribución de Contenido)
+
+> CDN
+
+- [CDN](https://cdnjs.com/)
+
 ## MIT License
 
 MIT License
