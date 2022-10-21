@@ -1,0 +1,32 @@
+{
+  "title": "Learning Node.js",
+  "numViews": 45250,
+  "numLikes": 2500,
+  "themes": ["Javascript", "Node.js", "React.js"],
+  "isPublic": true,
+  "city": {
+    "newCity": "New York",
+    "cityMx": "City of Mx",
+    "cityGd": "City Guadalajara",
+    "cityOfWorld": {
+      "france": "Paris",
+      "England": "London",
+      "Italy": "Rome",
+      "Germany": "Berlin",
+      "EUA": {
+        "NY": "New York",
+        "Boston": "New England",
+        "Texas": "Texas",
+        "Florida": "Orlando",
+        "California": "Angels"
+      }
+    }
+  },
+  "videoGames": [
+    "Zelda",
+    "Resident Evil",
+    "Mario Bros",
+    "Crash",
+    ["Silent Hill", "Gears Of War"]
+  ]
+}
