@@ -406,6 +406,10 @@ Investigar las diferentes tipos de licencia (MIT, isc...etc).
 
 ## npm and ¿JSON? Javascript Object Notation (Key - Value)
 
+> JSON Documentation
+
+- [JSON](https://www.json.org/json-es.html)
+
 - {} (Objects / Objetos) or [] (Array / Arreglos).
 - Los datos se representan como "pares": "clave - valor" (propiedades).
 - Formato (texto) basado en la sintaxis de Javascrpt. Almacena y transporta información.
