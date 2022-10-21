@@ -378,7 +378,9 @@ setImmediate(func, param0, param1, /* … ,*/ paramN)
 ## NPM & NodeJs
 
 > npm Create my first Package, in format JSON.
+
 > npm init
+
 > npm init --yes (default).
 
 - [npm](https://www.npmjs.com/)
@@ -421,7 +423,7 @@ Investigar las diferentes tipos de licencia (MIT, isc...etc).
 
 > Image (EDTeam)
 
-- [](https://static.platzi.com/media/user_upload/Captura-d1ad3ce0-efd6-4422-b8c2-9d43ff61109d.jpg)
+![](https://static.platzi.com/media/user_upload/Captura-d1ad3ce0-efd6-4422-b8c2-9d43ff61109d.jpg)
 
 ## CDN(Red de Distribución de Contenido)
 
