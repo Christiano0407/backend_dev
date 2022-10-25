@@ -21,8 +21,12 @@ const newProduct = async (productTwo) => {
 
 //*? >> === === Async and Await === === << */
 const asyncProduct = async () => {
-  const payProduct = await productOrder("PlayStation");
-  const newProductTwo = await newProduct(`IphonePro`);
-  console.log({ payProduct });
+  try {
+    const payProduct = await productOrder("PlayStation");
+    const newProductTwo = await newProduct(`IphonePro`);
+    console.log({ payProduct });
+  } catch (error) {
+    console.log("We have not product!");
+  }
 };
 asyncProduct();
