@@ -13,5 +13,16 @@ const productOrder = (product) => {
   });
 };
 
-//** >> === === Async and Await === === << */
-const asyncProduct = async () => {};
+const newProduct = async (productTwo) => {
+  setTimeout(() => {
+    console.log(`I pay a new ${productTwo} and is beautiful`);
+  }, 2000);
+};
+
+//*? >> === === Async and Await === === << */
+const asyncProduct = async () => {
+  const payProduct = await productOrder("PlayStation");
+  const newProductTwo = await newProduct(`IphonePro`);
+  console.log({ payProduct });
+};
+asyncProduct();
