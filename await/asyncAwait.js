@@ -26,7 +26,7 @@ const asyncProduct = async () => {
     const newProductTwo = await newProduct(`IphonePro`);
     console.log({ payProduct });
   } catch (error) {
-    console.log("We have not product!");
+    console.log(error);
   }
 };
 asyncProduct();
