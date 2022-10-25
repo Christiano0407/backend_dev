@@ -439,6 +439,96 @@ Investigar las diferentes tipos de licencia (MIT, isc...etc).
 
 - [CDN](https://cdnjs.com/)
 
+## Async & Await and Promises
+
+> Promise
+
+```javascript
+
+const promiseComplete = true;
+
+const myPromise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    if (promiseComplete) {
+      resolve("Good!");
+    } else {
+      reject("Sorry");
+    }
+  }, 2000);
+});
+
+const resolvePromises = (result) => {
+  console.log(result);
+};
+
+const rejectPromises = (error) => {
+  console.log(error);
+};
+
+myPromise.then(resolvePromises).catch(rejectPromises);
+
+```
+
+> Async & Await
+
+```javascript
+
+const productOrder = (product) => {
+  return new Promise((resolve, reject) => {
+    console.log(`Order a new ${product} and enjoy`);
+    setTimeout(() => {
+      if (product === `PlayStation`) {
+        resolve(`This is a new Product! It is Awesome!`);
+      }
+      if (product !== `PlayStation`) {
+        reject(`Very sorry!! We have not more PlayStation`);
+      }
+    }, 1000);
+  });
+};
+
+const newProduct = async (productTwo) => {
+  setTimeout(() => {
+    console.log(`I pay a new ${productTwo} and is beautiful`);
+  }, 2000);
+};
+
+//*? >> === === Async and Await === === << */
+const asyncProduct = async () => {
+  try {
+    const payProduct = await productOrder("PlayStation");
+    const newProductTwo = await newProduct(`IphonePro`);
+    console.log({ payProduct });
+  } catch (error) {
+    console.log(error);
+  }
+};
+asyncProduct();
+
+```
+
+## Model Client & Server
+
+> HTTP & HTTPS (Hypertext Transfer Protocol)
+
+Protocolo de Transferencia de Hipertexto.
+
+Modelo que usamos para acceder a Internet y obtener recursos e información.
+
+> El protocolo HTTP, define el formato de los mensajes (request).
+
+Un protocolo, es un conjunto de reglas que permiten transmitir información entre dispositivos de una red.
+
+> Client (Cliente)
+
+El Navegador desde el cual se realizan solicitudes a un servidor.
+
+> Server (Servidor)
+
+Programa que se ejecuta en un servidor físico para ofrecer un servicio al cliente. Envía información.
+
+El servidor conoce el formato esperado del mensaje que envía el cliente.Además, el cliente, conoce el formato esperado del mensaje que recibe del servidor.
+
 ## MIT License
 
 MIT License
