@@ -43,4 +43,6 @@ const falsePizza = (messageError) => {
   console.log(messageError);
 };
 
-callPizza.then(truePizza).catch(falsePizza);
+callPizza
+  .then((truePizza) => console.log(truePizza))
+  .catch((falsePizza) => console.log(falsePizza));
