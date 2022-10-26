@@ -585,6 +585,8 @@ Números que indican si se han completado exitosamente o no, las solicitudes HTT
 - 404 Not Found: El mservidor no pudo encontrar el recurso solicitado.
 - 500 Internal Server Error: El servidor encontró una situación que no sabe cómo manejar.
 
+![](https://camo.githubusercontent.com/0294f63543e7574885567ce08f9cea150b0972e0dbfa682d5e0b07e2423b3e62/68747470733a2f2f7062732e7477696d672e636f6d2f6d656469612f464452304f4d6d57514141486364573f666f726d61743d6a7067266e616d653d343039367834303936)
+
 ## Express Js
 
 > Node Js & ExpressJs
@@ -630,6 +632,22 @@ server.listen(PORT, () => {
 ```
 
 > run server: "npm run scripts"
+
+## Estructura de una URL
+
+> Estructura de una URL (Uniform Resource Locator / Localizador Uniforme de Recursos)
+
+- [MDN_URL](https://developer.mozilla.org/es/docs/Learn/Common_questions/What_is_a_URL);
+
+Dirección de un recurso en la Web.
+
+- [blog](https://superadmin.es/blog/que-es/direccion-web-url/#:~:text=El%20formato%20de%20una%20URL,para%20escribir%20una%20direcci%C3%B3n%20conocida.)
+
+![](https://superadmin.es/blog/img/posts/estructura-url.png)
+
+> Endpoints
+
+![](https://static.platzi.com/media/public/uploads/proyecto_-creando-los-endpoints-para-los-usuarios_ab256fe1-c585-402a-9466-af7413bb7d41.pdf)
 
 ## MIT License
 
