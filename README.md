@@ -645,10 +645,6 @@ Dirección de un recurso en la Web.
 
 ![](https://superadmin.es/blog/img/posts/estructura-url.png)
 
-> Endpoints
-
-![](https://static.platzi.com/media/public/uploads/proyecto_-creando-los-endpoints-para-los-usuarios_ab256fe1-c585-402a-9466-af7413bb7d41.pdf)
-
 ## MIT License
 
 MIT License
