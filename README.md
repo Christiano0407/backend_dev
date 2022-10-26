@@ -529,6 +529,103 @@ Programa que se ejecuta en un servidor físico para ofrecer un servicio al clien
 
 El servidor conoce el formato esperado del mensaje que envía el cliente.Además, el cliente, conoce el formato esperado del mensaje que recibe del servidor.
 
+> Solicitud (Request) HTTP
+
+- Métodos HTTP
+- Caminos (Path)
+- Versiones HTTP
+- Cabeceras (Headers)
+- Curpo (body)
+
+> Headers (Cabeceras)
+
+Proveen información adicional sobre la solicitud.
+
+> Body (Cuerpo)
+
+Contiene la información que debe ser enviada al servidor para procesar la solicitud. Formato JSON. No se incluye en todas las solicitudes (requieren enviar información como: POST y PUT).
+
+> HTTPS
+
+Le agrega una capa extra de seguridad.
+
+> Método (Method) HTTP
+
+Verbo ("verbos HTTP") o solicitud que indica la intención de la solicitud.
+
+- GET (para Solicitar un recurso específico).
+- POST (Para Crear un recurso específico. Agregar ususarios nuevos a una base de datos).
+- PUT (Para Modificar un recurso específico. Hacer un cambio en una base de datos.)
+- DELETE (Para  Eliminar un recurso específico).
+
+> Respuesta (Response) HTTP
+
+- Código de estado.
+- Texto de Estado.
+- Versiones HTTP.
+- Cabeceras (Headers).
+- Cuerpo (Body).
+
+> Código de Estado HTTP
+
+- [HTTP State](https://developer.mozilla.org/es/docs/Web/HTTP/Status)
+
+Números que indican si se han completado exitosamente o no, las solicitudes HTTP.
+
+- Respuestas informativas (100–199),
+- Respuestas satisfactorias (200–299),
+- Redirecciones (300–399),
+- Errores de los clientes (400–499),
+- Errores de los servidores (500–599).
+
+> Más comunes
+
+- 200 OK: La respuesta fue exitosa.
+- 400 Bad Request: El servidor no pudo interpretar la solicitud.
+- 404 Not Found: El mservidor no pudo encontrar el recurso solicitado.
+- 500 Internal Server Error: El servidor encontró una situación que no sabe cómo manejar.
+
+## Express Js
+
+> Node Js & ExpressJs
+
+Podemos especificar el código de estado de la respuesta HTTP, ennuestro servidor.
+
+- [express](https://expressjs.com/es/)
+
+> Puerto(Port)
+
+Ubicación virtual del sistema operativo en la cual se puede acceder a una aplicación o a un proceso en específico que se esté ejecutando en ese puerto.
+
+> Express Server
+
+```javascript
+const express = require(`express`);
+
+const app = express();
+
+app.get(`/`, (res, req) => {
+  res.send("Hello World");
+});
+
+app.listen(3000);
+console.log("Server Is running on port 3000");
+```
+
+> HTTP Server
+
+```javascript
+const http = require(`http`);
+
+const server = http.createServer((req, res) => {
+  res.end(`Hello, World!!`);
+});
+
+server.listen(3000, () => {
+  console.log("Listen on port 3000");
+});
+```
+
 ## MIT License
 
 MIT License
