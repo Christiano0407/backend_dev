@@ -626,6 +626,8 @@ server.listen(3000, () => {
 });
 ```
 
+> run server: "npm run scripts"
+
 ## MIT License
 
 MIT License
