@@ -645,6 +645,35 @@ Dirección de un recurso en la Web.
 
 ![](https://superadmin.es/blog/img/posts/estructura-url.png)
 
+> Protocolo
+
+HTTP / HTTPS
+
+> Subdominio
+
+Información adicional agregada al inicio del dominio de una página web. Permite organizar y separar la información para distintos propósitos.
+
+> Dominio
+
+Nombre del sitio.Referencia única a un sitio web en internet.
+
+> Dominio de nivel superio (TLD:Top Level Domain)
+
+.org,.mx,.dev,.com,.net,.edu...
+
+> PATH (Camino)
+
+Raíz de nuestro sitio Web (Página Principal). Archivo o directorio en el servidor web.
+Puede tener parámetros para personalizarlo. Estos parámetros son parte de la URL.
+
+> Endpoint / id(Identificador único de Usuario)
+
+Son parte del "PATH". Tienen un "slash".
+/endpoints
+/endpoints/14(id)
+
+> Parámetros Query
+
 ## MIT License
 
 MIT License
