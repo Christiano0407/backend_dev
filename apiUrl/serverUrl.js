@@ -31,6 +31,16 @@ const requestGet = (req, res) => {
     res.statusCode = 200;
     res.end(JSON.stringify(courses.infoCourses.programming));
   }
+
+  if (path === "/courses/math") {
+    res.statusCode = 200;
+    res.end(JSON.stringify(courses.infoCourses.math));
+  }
+
+  if (path === "/courses/cloud") {
+    res.statusCode = 200;
+    res.end(JSON.stringify(courses.infoCourses.cloud));
+  }
 };
 
 server.listen(PORT, () => {
