@@ -710,6 +710,20 @@ console.log(miURL.searchParams.get(`nivel`));
 
 ```
 
+## Routing en Node.js
+
+> Routing (para servidores)
+
+Manejar las solicitudes del cliente en base a ciertos criterios (método y camino).
+
+> Route == Ruta (Method & Path)
+
+El método (method = "GET", "POST", "PUT", "DELETE", Otros...) de la solicitud HTTP. De esta forma el servidor sabe qué tipo de operación se realizará.
+
+El camino (Path) de la solicitud HTTP. De esta forma el servidor sabe el recurso específico que se usará, o se va a modificar o eliminar.
+
+Method (Método)(¿Qué?) + Path (camino)(¿Dónde?) + Cómo Manejarlo(¿Cómo?)
+
 ## MIT License
 
 MIT License
