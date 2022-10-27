@@ -27,6 +27,7 @@ let infoCourses = {
       id: 1,
       title: `Math for Developers`,
       language: `Python`,
+      theme: "Calc",
       views: 10000,
       level: `medium`,
     },
@@ -50,4 +51,5 @@ let infoCourses = {
   ],
 };
 
-console.log(infoCourses);
+//console.log(infoCourses);
+module.exports.infoCourses = infoCourses;
