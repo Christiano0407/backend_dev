@@ -49,3 +49,8 @@ const requestGet = (req, res) => {
 server.listen(PORT, () => {
   console.log(`Listen on port http://localhost:${PORT}...`);
 });
+
+/*  if (path === `/courses/programming/?id=${id}`) {
+    res.statusCode = 200;
+    res.end(JSON.stringify(courses.infoCourses.programming[0].id));
+  } */
