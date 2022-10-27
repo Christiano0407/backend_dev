@@ -679,14 +679,21 @@ Son parámetros usados para obtener contenido dinámico. Por ejemplo, filtrar un
 
 > ? (Cerrar la pregunta)
 
-- ?q(clave o key)=cursos+de+node(Valor) / ?q=cursos+de+node
-- <http://ejemplo.org/search?categoria=programacion>
+```javascript
+
+?q(clave o key)=cursos+de+node(Valor)
+?q=cursos+de+node
+<http://ejemplo.org/search?categoria=programacion>
+
+```
 
 > Varios Parámetros Query (Cada par, tendrá su Clave y Valor)
 
 Separar con un "&".Usamos parámetros query para filtrar solicitudes "GET" (para obtener recursos en específico).
 
-- ?q=cursos+de+node&sourceid=chrome&ie=UTF-8
+```javascript
+?q=cursos+de+node&sourceid=chrome&ie=UTF-8
+```
 
 ## MIT License
 
