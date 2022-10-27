@@ -41,6 +41,9 @@ const requestGet = (req, res) => {
     res.statusCode = 200;
     res.end(JSON.stringify(courses.infoCourses.cloud));
   }
+
+  res.statusCode = 404;
+  res.end("Sorry! Web & Resource Not Found...");
 };
 
 server.listen(PORT, () => {
