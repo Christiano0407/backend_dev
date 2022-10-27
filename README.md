@@ -672,7 +672,21 @@ Son parte del "PATH". Tienen un "slash".
 /endpoints
 /endpoints/14(id)
 
-> Parámetros Query
+> Parámetros Query o Query String
+
+Query (Consulta) (<http://example.com/path?name=Branch&products=[Journeys,Email,Universal%20Ads>])
+Son parámetros usados para obtener contenido dinámico. Por ejemplo, filtrar una lista de recursos.
+
+> ? (Cerrar la pregunta)
+
+- ?q(clave o key)=cursos+de+node(Valor) / ?q=cursos+de+node
+- <http://ejemplo.org/search?categoria=programacion>
+
+> Varios Parámetros Query (Cada par, tendrá su Clave y Valor)
+
+Separar con un "&".Usamos parámetros query para filtrar solicitudes "GET" (para obtener recursos en específico).
+
+- ?q=cursos+de+node&sourceid=chrome&ie=UTF-8
 
 ## MIT License
 
