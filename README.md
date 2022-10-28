@@ -306,7 +306,7 @@ resizeImage();
 
 ```
 
-## Express Web Framework
+## Express Js Web Framework
 
 > Express Js
 
@@ -336,6 +336,44 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
 ```
+
+> Características / Characters
+
+- Routing
+- Enfócate en alto rendimiento
+- Nos permite desarrollar aplicaciones de Node.js más rápidamente con código conciso.
+
+> CRUD (Create, Read, Update, Delete)
+
+(Crear, Leer, Actualizar, Eliminar)
+Operaciones básicas que se pueden realizar con la información almacenada.
+
+> CRUD & HTTP
+
+CRUD & HTTP (Method) => Create == POST, Read == GET, Update == PUT, Delete == DELET.
+
+> CRUD & API (Application Programming Interface)
+
+API: Interfaz de Programación de aplicaciones.
+Permite que dos o más programas se comuniquen entre si.
+
+Nos permite que un software ofrezca un servicio a otro software.
+
+La "API", no son usadas directamente por el usuario sino por el programador que usa la "API", para implementar su programa.
+
+Normalmente usamos el formato "JSON".
+
+> API Tool (Rapid API)
+
+-[Rapid_API](https://rapidapi.com/hub);
+
+> API & REST (RESTful API)
+
+RESTFul API: Es una "API", basada en "REST".
+
+> REST (Representation State Transfer)
+
+Estilo de arquitectura de software para sistemas hepermedia distribuidos como la "World Wide Web".
 
 ## Time
 
