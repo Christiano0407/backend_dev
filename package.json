@@ -26,5 +26,8 @@
     "jshint": "^2.13.5",
     "moment": "^2.29.4",
     "sharp": "^0.31.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }

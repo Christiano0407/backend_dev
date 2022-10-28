@@ -22,6 +22,7 @@ const server = http.createServer((req, res) => {
     console.log(`Method not found with server ${method}`);
   }
 });
+//** === GET */
 //** ===> status 200 >> Default === */
 const requestGet = (req, res) => {
   const path = req.url;
@@ -57,7 +58,7 @@ const requestGet = (req, res) => {
   res.statusCode = 404;
   return res.end("Sorry! Web & Resource Not Found...");
 };
-
+//** === POST */
 const methodPost = (req, res) => {
   const path = req.url;
   if (path === "/courses/programming") {

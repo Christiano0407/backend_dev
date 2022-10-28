@@ -260,6 +260,22 @@ console.log(os.networkInterfaces());
 
 - [nodemon](https://github.com/remy/nodemon#nodemon)
 
+```javascript
+
+// > Install Global
+npm install -g nodemon
+
+```
+
+```javascript
+
+// > Install Development Dependency
+npm install --save-dev nodemon
+
+//nodemon ./server.js localhost 8080
+
+```
+
 > PM2
 
 - [PM2](https://pm2.keymetrics.io/)
