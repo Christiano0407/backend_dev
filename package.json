@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "server": "node ./server/appServer.js",
-    "urlApi": "node ./apiUrl/serverUrl.js"
+    "urlApi": "nodemon ./apiUrl/serverUrl.js"
   },
   "repository": {
     "type": "git",
