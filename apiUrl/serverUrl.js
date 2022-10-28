@@ -1,15 +1,18 @@
 const http = require("http");
 const courses = require("./coursesUrl.js");
+// 2) const {infoCourses} = require("./coursesUrl");
 console.log(courses);
 const PORT = 3000;
 
 const server = http.createServer((req, res) => {
   //req.end("Hello World");
   const { method } = req;
+  // 2) const method = req.method;
 
   if (method === "GET") {
     return requestGet(req, res);
   } else {
+    res.statusCode = 501;
     console.log(`Method not found with server ${method}`);
   }
 
@@ -24,7 +27,10 @@ const requestGet = (req, res) => {
   const path = req.url;
 
   if (path === "/") {
-    res.statusCode = 200;
+    //res.statusCode = 200;
+    res.writeHead(200, {
+      "Content-type": "application/json",
+    });
     return res.end(`Welcome,to my first Server and API, create with Node.js`);
   }
 
