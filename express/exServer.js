@@ -6,7 +6,7 @@ const { infoCourses } = require("../apiUrl/coursesUrl");
 console.log(infoCourses);
 const PORT = process.env.PORT || 3000;
 
-//** === Call APP && Routing && Parameters Search URL === */
+//** === Call APP && Routing && Parameters Search URL (:) && Query Params (?) === */
 app.get("/", (req, res) => {
   res.send("Hello World!!");
 });
@@ -19,7 +19,27 @@ app.get("/api/courses/programming", (req, res) => {
   res.send(JSON.stringify(infoCourses.programming));
 });
 
-//*!=== Add Parameter (:, ?, key, value) */
+//*! === ADD Query Params */
+app.get("/api/courses/programming/:language", (req, res) => {
+  const language = req.params.language;
+  const result = infoCourses.programming.filter(
+    (course) => course.language === language
+  );
+
+  //*? Not Found */
+  if (result.length === 0) {
+    return res.status(404).send(`Sorry! Not Found${language} and ${level}`);
+  }
+
+  //*? Query Params */
+  if (req.query.order === "view") {
+    return res.send(JSON.stringify(result.sort((a, b) => a.view - b.view)));
+  }
+
+  res.send(JSON.stringify(result));
+});
+
+//*! === Add Parameter URL */
 app.get(`/api/courses/programming/:language/:level`, (req, res) => {
   const language = req.params.language;
   const level = req.params.level;
