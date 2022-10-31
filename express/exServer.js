@@ -20,15 +20,17 @@ app.get("/api/courses/programming", (req, res) => {
 });
 
 //*!=== Add Parameter (:, ?, key, value) */
-app.get(`/api/courses/programming/:language`, (req, res) => {
+app.get(`/api/courses/programming/:language/:level`, (req, res) => {
   const language = req.params.language;
+  const level = req.params.level;
+
   const result = infoCourses.programming.filter(
-    (course) => course.language === language
+    (course) => course.language === language && course.level === level
   );
 
   //*? === Not found */
   if (result.length === 0) {
-    return res.status(404).send(`Sorry! Not Found${language}`);
+    return res.status(404).send(`Sorry! Not Found${language} and ${level}`);
   }
 
   res.send(JSON.stringify(result));
