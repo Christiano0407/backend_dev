@@ -11,6 +11,13 @@ app.get("/", (req, res) => {
   res.send("Hello World!!");
 });
 
+app.get("/api/courses", (req, res) => {
+  res.send(JSON.stringify(infoCourses));
+});
+
+app.get("/api/courses/programming", (req, res) => {
+  res.send(JSON.stringify(infoCourses.programming));
+});
 //** === === === PORT & Listen */
 app.listen(PORT, () => {
   console.log(`Listen App in Port http://localhost:${PORT}...`);
