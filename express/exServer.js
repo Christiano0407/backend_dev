@@ -38,6 +38,19 @@ app.get("/api/courses/math", (req, res) => {
   res.send(JSON.stringify(infoCourses.math));
 });
 
+app.get("/api/courses/math/:theme", (req, res) => {
+  const theme = req.params.theme;
+  const result = infoCourses.math.filter(
+    (courseMath) => courseMath.theme === theme
+  );
+
+  if (result.length === 0) {
+    return res.status(404).send(`Sorry! Not Found${language}`);
+  }
+
+  res.send(JSON.stringify(result));
+});
+
 app.get("/api/courses/cloud", (req, res) => {
   res.send(JSON.stringify(infoCourses.cloud));
 });
