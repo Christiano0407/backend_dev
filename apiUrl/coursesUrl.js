@@ -21,6 +21,13 @@ let infoCourses = {
       view: 30000,
       level: `Expert`,
     },
+    {
+      id: 4,
+      title: `Programming for IA`,
+      language: `R`,
+      view: 5000,
+      level: `Expert`,
+    },
   ],
   math: [
     {
