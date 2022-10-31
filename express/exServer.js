@@ -9,6 +9,8 @@ const PORT = process.env.PORT || 3000;
 //** === Create Routers New */
 const routingProgramming = express.Router();
 app.use(`/api/courses/programming`, routingProgramming);
+const routingMath = express.Router();
+app.use(`/api/courses/math`, routingMath);
 
 //** === Call APP && Routing && Parameters Search URL (:) && Query Params (?) === */
 app.get("/", (req, res) => {
@@ -60,11 +62,11 @@ routingProgramming.get(`/:language/:level`, (req, res) => {
   res.send(JSON.stringify(result));
 });
 
-app.get("/api/courses/math", (req, res) => {
+routingMath.get("/", (req, res) => {
   res.send(JSON.stringify(infoCourses.math));
 });
 
-app.get("/api/courses/math/:theme", (req, res) => {
+routingMath.get("/:theme", (req, res) => {
   const theme = req.params.theme;
   const result = infoCourses.math.filter(
     (courseMath) => courseMath.theme === theme
