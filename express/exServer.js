@@ -1,10 +1,14 @@
 //** === === Express Server Part Two === === */
 const express = require(`express`);
+//** === App & Call Require API*/
 const app = express();
-
 const { infoCourses } = require("../apiUrl/coursesUrl");
-console.log(infoCourses);
+//console.log(infoCourses);
+//** === PORT */
 const PORT = process.env.PORT || 3000;
+//** === Create Routers New */
+const routingProgramming = express.Router();
+app.use(`/api/courses/programming`, routingProgramming);
 
 //** === Call APP && Routing && Parameters Search URL (:) && Query Params (?) === */
 app.get("/", (req, res) => {
@@ -15,12 +19,12 @@ app.get("/api/courses", (req, res) => {
   res.send(JSON.stringify(infoCourses));
 });
 
-app.get("/api/courses/programming", (req, res) => {
+routingProgramming.get("/", (req, res) => {
   res.send(JSON.stringify(infoCourses.programming));
 });
 
 //*! === ADD Query Params */
-app.get("/api/courses/programming/:language", (req, res) => {
+routingProgramming.get("/:language", (req, res) => {
   const language = req.params.language;
   const result = infoCourses.programming.filter(
     (course) => course.language === language
@@ -40,7 +44,7 @@ app.get("/api/courses/programming/:language", (req, res) => {
 });
 
 //*! === Add Parameter URL */
-app.get(`/api/courses/programming/:language/:level`, (req, res) => {
+routingProgramming.get(`/:language/:level`, (req, res) => {
   const language = req.params.language;
   const level = req.params.level;
 
