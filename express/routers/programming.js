@@ -2,7 +2,7 @@
 const express = require(`express`);
 const routingProgramming = express.Router();
 
-const { programming } = require("../dataAPI/data").infoCourses;
+const { programming } = require("../dataAPI/data.js").infoCourses;
 //*! ===> KEY: Replace infoCourses For programming <=== */
 
 //** === === ===  Call Programming === === ===  */
@@ -46,7 +46,6 @@ routingProgramming.get("/:language/:level", (req, res) => {
 });
 
 //** ==> EXPORT <== && Different Forms Export */
-module.exports.routingProgramming = routingProgramming;
-/*
+//module.exports.routingProgramming = routingProgramming;
+
 module.exports = routingProgramming;
-*/

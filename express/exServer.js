@@ -2,7 +2,7 @@
 const express = require(`express`);
 //** === App & Call Require API*/
 const app = express();
-const { infoCourses } = require("./dataAPI/data");
+const { infoCourses } = require("./dataAPI/data.js");
 const routingProgramming = require("./routers/programming.js");
 //console.log(infoCourses);
 //** === PORT */
