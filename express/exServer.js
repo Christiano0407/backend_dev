@@ -4,12 +4,12 @@ const express = require(`express`);
 const app = express();
 const { infoCourses } = require("./dataAPI/data.js");
 const routingProgramming = require("./routers/programming.js");
+const routingMath = require("./routers/math.js");
 //console.log(infoCourses);
 //** === PORT */
 const PORT = process.env.PORT || 3000;
 //** === Create Routers New */
 app.use("/api/courses/programming", routingProgramming);
-const routingMath = express.Router();
 app.use("/api/courses/math", routingMath);
 const routingDev = express.Router();
 app.use("/api/courses/developer", routingDev);
@@ -21,23 +21,6 @@ app.get("/", (req, res) => {
 
 app.get("/api/courses", (req, res) => {
   res.send(JSON.stringify(infoCourses));
-});
-
-routingMath.get("/", (req, res) => {
-  res.send(JSON.stringify(infoCourses.math));
-});
-
-routingMath.get("/:theme", (req, res) => {
-  const theme = req.params.theme;
-  const result = infoCourses.math.filter(
-    (courseMath) => courseMath.theme === theme
-  );
-
-  if (result.length === 0) {
-    return res.status(404).send(`Sorry! Not Found${language}`);
-  }
-
-  res.send(JSON.stringify(result));
 });
 
 app.get("/api/courses/cloud", (req, res) => {
