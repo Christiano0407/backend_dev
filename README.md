@@ -841,6 +841,23 @@ Tienen acceso al objeto de la solicitud, al objeto de la respuesta y a next(); e
 - Function next().
 - Como un Intermediario.
 
+> PUT ==> Update (Actualizar info / Entidad completa)
+
+```javascript
+routingProgramming.put(`/:id`, (req, res) => {
+  const updateCoursePro = req.body;
+  const id = req.params.id;
+  const index = programming.findIndex((course) => course.id == id);
+
+  if (index >= 0) {
+    programming[index] = updateCoursePro;
+  }
+
+  res.send(JSON.stringify(programming));
+});
+
+```
+
 ## MIT License
 
 MIT License

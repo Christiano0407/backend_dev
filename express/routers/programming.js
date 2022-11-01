@@ -49,9 +49,24 @@ routingProgramming.get("/:language/:level", (req, res) => {
 });
 
 //** ==> Different Methods With Router <== */
+
+//** === POST === */
 routingProgramming.post("/", (req, res) => {
   let newCoursePro = req.body;
   programming.push(newCoursePro);
+  res.send(JSON.stringify(programming));
+});
+
+//** === PUT ==> Update Complete ===  */
+routingProgramming.put(`/:id`, (req, res) => {
+  const updateCoursePro = req.body;
+  const id = req.params.id;
+  const index = programming.findIndex((course) => course.id == id);
+
+  if (index >= 0) {
+    programming[index] = updateCoursePro;
+  }
+
   res.send(JSON.stringify(programming));
 });
 
