@@ -116,6 +116,14 @@ routingDev.get("/basic/:language", (req, res) => {
   res.send(JSON.stringify(result));
 });
 
+routingDev.get("/medium", (req, res) => {
+  res.send(JSON.stringify(infoCourses.developer[1].medium));
+});
+
+routingDev.get("expert", (req, res) => {
+  res.send(JSON.stringify(infoCourses.developer[2].expert));
+});
+
 //** === === === PORT & Listen */
 app.listen(PORT, () => {
   console.log(`Listen App in Port http://localhost:${PORT}...`);
