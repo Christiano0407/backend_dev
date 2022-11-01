@@ -801,6 +801,46 @@ routingProgramming.get("/", (req, res) => {
 
 ```
 
+> Different Methods With Router
+
+```javascript
+
+routingProgramming.post("/", (req, res) => {
+  let newCoursePro = req.body;
+  programming.push(newCoursePro);
+  res.send(JSON.stringify(programming));
+});
+
+```
+
+> POST (Add: "") ==> in Programming
+
+```javascript
+POST http://localhost:3000/api/courses/programming HTTP/1.1
+Content-Type: application/json;
+
+{
+  "id": 5,
+  "title": `Programming for IA with Python`,
+  "language": ["Python", "R"],
+  "view": 50000,
+  "level": `Expert`,
+}
+
+```
+
+> Middleware (Method POST)
+
+La función se ejecuta:
+
+- Después, de recibir la solicitud.
+- Antes, de enviar una respuesta.
+
+Tienen acceso al objeto de la solicitud, al objeto de la respuesta y a next(); es una función que se llama para ejecutar el próximo middleware.
+
+- Function next().
+- Como un Intermediario.
+
 ## MIT License
 
 MIT License

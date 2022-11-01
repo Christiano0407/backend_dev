@@ -5,6 +5,9 @@ const routingProgramming = express.Router();
 const { programming } = require("../dataAPI/data.js").infoCourses;
 //*! ===> KEY: Replace infoCourses For programming <=== */
 
+//** === Middleware ==> Call Method POST <== Processing === */
+routingProgramming.use(express.json());
+
 //** === === ===  Call Programming === === ===  */
 routingProgramming.get("/", (req, res) => {
   res.send(JSON.stringify(programming));
@@ -45,7 +48,13 @@ routingProgramming.get("/:language/:level", (req, res) => {
   res.send(JSON.stringify(result));
 });
 
+//** ==> Different Methods With Router <== */
+routingProgramming.post("/", (req, res) => {
+  let newCoursePro = req.body;
+  programming.push(newCoursePro);
+  res.send(JSON.stringify(programming));
+});
+
 //** ==> EXPORT <== && Different Forms Export */
 //module.exports.routingProgramming = routingProgramming;
-
 module.exports = routingProgramming;
