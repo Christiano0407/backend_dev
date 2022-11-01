@@ -8,9 +8,11 @@ const { infoCourses } = require("../apiUrl/coursesUrl");
 const PORT = process.env.PORT || 3000;
 //** === Create Routers New */
 const routingProgramming = express.Router();
-app.use(`/api/courses/programming`, routingProgramming);
+app.use("/api/courses/programming", routingProgramming);
 const routingMath = express.Router();
-app.use(`/api/courses/math`, routingMath);
+app.use("/api/courses/math", routingMath);
+const routingDev = express.Router();
+app.use("/api/courses/developer", routingDev);
 
 //** === Call APP && Routing && Parameters Search URL (:) && Query Params (?) === */
 app.get("/", (req, res) => {
@@ -38,15 +40,15 @@ routingProgramming.get("/:language", (req, res) => {
   }
 
   //*? Query Params */
-  if (req.query.order === "view") {
-    return res.send(JSON.stringify(result.sort((a, b) => a.view - b.view)));
+  if (req.query.order === "views") {
+    return res.send(JSON.stringify(result.sort((a, b) => a.views - b.views)));
   }
 
   res.send(JSON.stringify(result));
 });
 
 //*! === Add Parameter URL */
-routingProgramming.get(`/:language/:level`, (req, res) => {
+routingProgramming.get("/:language/:level", (req, res) => {
   const language = req.params.language;
   const level = req.params.level;
 
@@ -88,21 +90,8 @@ app.get("/api/courses/data", (req, res) => {
 app.get("/api/courses/python", (req, res) => {
   res.send(JSON.stringify(infoCourses.python));
 });
-app.get("/api/courses/developer", (req, res) => {
+routingDev.get("/", (req, res) => {
   res.send(JSON.stringify(infoCourses.developer));
-});
-
-app.get("/api/courses/developer/:language", (req, res) => {
-  const language = req.params.language;
-  const results = infoCourses.developer.filter(
-    (devCourse) => devCourse.language === language
-  );
-
-  if (results.length === 0) {
-    return res.status(404).send(`Sorry! Not Found${language}`);
-  }
-
-  res.send(JSON.stringify(results));
 });
 
 //** === === === PORT & Listen */
