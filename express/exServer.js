@@ -94,6 +94,28 @@ routingDev.get("/", (req, res) => {
   res.send(JSON.stringify(infoCourses.developer));
 });
 
+routingDev.get("/basic", (req, res) => {
+  res.send(JSON.stringify(infoCourses.developer[0].basic));
+});
+
+routingDev.get("/basic/:language", (req, res) => {
+  const language = req.params.language;
+  const result = infoCourses.developer[0].basic.filter(
+    (course) => course.language === language
+  );
+
+  if (result.length === 0) {
+    return res.status(404).send(`Sorry! Not Found ${language}. Thank you.`);
+  }
+
+  //*? Query Parameter === */
+  if (req.query.level === "Basic") {
+    return res.send(JSON.stringify(result));
+  }
+
+  res.send(JSON.stringify(result));
+});
+
 //** === === === PORT & Listen */
 app.listen(PORT, () => {
   console.log(`Listen App in Port http://localhost:${PORT}...`);
