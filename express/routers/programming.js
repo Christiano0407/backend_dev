@@ -2,7 +2,7 @@
 const express = require(`express`);
 const routingProgramming = express.Router();
 
-const { programming } = require("../routers/programming.js").infoCourses;
+const { programming } = require("../dataAPI/data").infoCourses;
 //*! ===> KEY: Replace infoCourses For programming <=== */
 
 //** === === ===  Call Programming === === ===  */
