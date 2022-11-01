@@ -2,7 +2,7 @@
 const express = require(`express`);
 const routingMath = express.Router();
 
-const { math } = require("../dataAPI/data.js");
+const { math } = require("../dataAPI/data.js").infoCourses;
 
 //** ===> */
 routingMath.get("/", (req, res) => {
@@ -19,3 +19,5 @@ routingMath.get("/:theme", (req, res) => {
 
   res.send(JSON.stringify(result));
 });
+
+module.exports = routingMath;
