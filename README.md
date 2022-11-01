@@ -731,6 +731,15 @@ Son parte del "PATH". Tienen un "slash".
 Query (Consulta) (<http://example.com/path?name=Branch&products=[Journeys,Email,Universal%20Ads>])
 Son parámetros usados para obtener contenido dinámico. Por ejemplo, filtrar una lista de recursos.
 
+Son separados por "?".
+
+```javascript
+//*? Query Params */
+  if (req.query.order === "views") {
+    return res.send(JSON.stringify(result.sort((a, b) => a.views - b.views)));
+  }
+```
+
 > ? (Cerrar la pregunta)
 
 ```javascript
@@ -777,6 +786,20 @@ El método (method = "GET", "POST", "PUT", "DELETE", Otros...) de la solicitud H
 El camino (Path) de la solicitud HTTP. De esta forma el servidor sabe el recurso específico que se usará, o se va a modificar o eliminar.
 
 Method (Método)(¿Qué?) + Path (camino)(¿Dónde?) + Cómo Manejarlo(¿Cómo?)
+
+> Create Routing New
+
+```javascript
+
+const routingProgramming = express.Router();
+app.use("/api/courses/programming", routingProgramming);
+
+// ===
+routingProgramming.get("/", (req, res) => {
+  res.send(JSON.stringify(infoCourses.programming));
+});
+
+```
 
 ## MIT License
 
