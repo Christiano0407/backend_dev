@@ -84,6 +84,32 @@ routingProgramming.patch("/:id", (req, res) => {
   res.send(JSON.stringify(programming));
 });
 
+/*
+PATCH http://localhost:3000/api/courses/programming/2 HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "Python Advance",
+  "view": 20000
+}
+*/
+
+//** === Delete === */
+routingProgramming.delete("/:id", (req, res) => {
+  const id = req.params.id;
+  const index = programming.findIndex((course) => course.id == id);
+
+  if (index >= 0) {
+    programming.splice(index, 1);
+  }
+
+  res.send(JSON.stringify(programming));
+});
+
+/*
+DELETE http://localhost:3000/api/courses/programming/1 HTTP/1.1
+*/
+
 //** ==> EXPORT <== && Different Forms Export */
 //module.exports.routingProgramming = routingProgramming;
 module.exports = routingProgramming;
