@@ -69,6 +69,20 @@ routingProgramming.put(`/:id`, (req, res) => {
 
   res.send(JSON.stringify(programming));
 });
+//*? ==> Patch = HTTP */
+routingProgramming.patch("/:id", (req, res) => {
+  const updateInfoCourse = req.body;
+  const id = req.params.id;
+
+  const index = programming.findIndex((course) => course.id == id);
+
+  if (index >= 0) {
+    const courseModifier = programming[index];
+    Object.assign(courseModifier, updateInfoCourse);
+  }
+
+  res.send(JSON.stringify(programming));
+});
 
 //** ==> EXPORT <== && Different Forms Export */
 //module.exports.routingProgramming = routingProgramming;

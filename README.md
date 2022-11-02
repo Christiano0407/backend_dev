@@ -858,6 +858,39 @@ routingProgramming.put(`/:id`, (req, res) => {
 
 ```
 
+```javascript
+
+/* ==> Patch = HTTP */
+routingProgramming.patch("/:id", (req, res) => {
+  const updateInfoCourse = req.body;
+  const id = req.params.id;
+
+  const index = programming.findIndex((course) => course.id == id);
+
+  if (index >= 0) {
+    const courseModifier = programming[index];
+    Object.assign(courseModifier, updateInfoCourse);
+  }
+});
+
+```
+
+> Patch
+
+- [MDN_PATCH](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PATCH)
+
+> Object.assign
+
+- [MDN_Object_assign](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+
+> Methods HTTP
+
+- [mdn_Methods_HTTP](https://developer.mozilla.org/es/docs/Web/HTTP/Methods)
+
+> Methods Javascript
+
+- [MDN_Methods_Javascipt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/@@iterator)
+
 ## MIT License
 
 MIT License
