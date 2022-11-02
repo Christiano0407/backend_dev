@@ -953,9 +953,25 @@ return res.status(404).end();
 
 ```
 
-> OBJECT
+> Object
 
 - [MDN_Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
+> Array
+
+- [MDN_Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+> Javascript MDN
+
+- [MDN_Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+> WEB API MDN
+
+- [MDN_WebAPI](https://developer.mozilla.org/en-US/docs/Web/API)
+
+> References Javascript MDN
+
+- [MDN_JS_References](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
 
 ## MIT License
 
