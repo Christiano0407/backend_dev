@@ -923,6 +923,40 @@ DELETE http://localhost:3000/api/courses/programming/1 HTTP/1.1
 
 ```
 
+> Método muy utilizado: res.json(); ==> Convierte automáticamente, a formato JSON.
+
+```javascript
+res.send(JSON.stringify(programming));
+
+res.json(programming);
+
+```
+
+> Request.send()
+
+- [MDN_send](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/send)
+
+> Response.json()
+
+- [MDN_res.json](https://developer.mozilla.org/en-US/docs/Web/API/Response/json)
+
+> Method ==> .end()
+
+Permite ponerle fin pero, manda una respuesta o respuesta vacía.
+
+```javascript
+// > Respuesta 
+return res.status(404).send("Field not exist");
+
+// > Respuesta Vacía
+return res.status(404).end();
+
+```
+
+> OBJECT
+
+- [MDN_Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
 ## MIT License
 
 MIT License
