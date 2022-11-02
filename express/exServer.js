@@ -66,6 +66,7 @@ routingDev.get("expert", (req, res) => {
   res.send(JSON.stringify(infoCourses.developer[2].expert));
 });
 
+//*? === tIP: No es necesario poner siempre ==> JSON.stringify <== En Js, en casos ya viene por default ===  */
 //** === === === PORT & Listen */
 app.listen(PORT, () => {
   console.log(`Listen App in Port http://localhost:${PORT}...`);
