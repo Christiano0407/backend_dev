@@ -126,6 +126,11 @@ Aplication Programming Interface (Interfaz de programación de aplicaciones).
 
 - [RapidAPI](https://rapidapi.com/hub)
 
+> Fetch
+
+La API Fetch proporciona una interfaz para recuperar recursos (incluso a través de la red).
+- [MDN_Fetch](https://developer.mozilla.org/es/docs/Web/API/Fetch_API)
+
 ## Event Loop
 
 > Event Loop
@@ -374,6 +379,11 @@ RESTFul API: Es una "API", basada en "REST".
 > REST (Representation State Transfer)
 
 Estilo de arquitectura de software para sistemas hepermedia distribuidos como la "World Wide Web".
+
+> Fetch (API)
+
+La API Fetch proporciona una interfaz para recuperar recursos (incluso a través de la red).
+- [MDN_Fetch](https://developer.mozilla.org/es/docs/Web/API/Fetch_API); 
 
 ## Time
 
